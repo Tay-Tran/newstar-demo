@@ -607,3 +607,14 @@ html[lang="en"] .smap h2{text-transform:uppercase}
 /* Chữ tiếng Anh dài hơn: cho nút xuống dòng và các cột co lại được trên điện thoại */
 .qb>div,.toolbar>*{min-width:0}
 @media (max-width:560px){ .btn{white-space:normal;text-align:center;line-height:1.25;padding-top:10px;padding-bottom:10px} .pd-actions{grid-template-columns:1fr} }
+
+/* Nút đăng nhập đại lý trên thanh menu (14/11/2026) */
+.nav-login{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 12px;border:1px solid var(--line2);border-radius:var(--r);color:#fff;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap}
+.nav-login:hover,.nav-login[aria-current="page"]{border-color:var(--blue);color:var(--blue-t)}
+.nav-login svg{width:16px;height:16px;flex:none}
+@media (max-width:1280px){ .nav-login{width:38px;padding:0;justify-content:center} .nav-login .lbl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap} }
+@media (max-width:480px){ .nav-r{gap:8px} .nav-search{display:none} }
+@media (max-width:359px){ .logo i{display:none} }
+@media (max-width:1080px){ .nav .wrap>nav{display:none} }
+.split>*{min-width:0} .info a,.info b{overflow-wrap:anywhere}
+@media (max-width:359px){ .nav-r{gap:6px} }
